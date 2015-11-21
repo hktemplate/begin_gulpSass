@@ -23,6 +23,8 @@ gulp.task('build-css', function() {
     .pipe(gulp.dest('public/assets/css'));
 });
 
+// use
+// gulp --type production build-js to concat AND minify
 gulp.task('build-js', function() {
   return gulp.src('source/script/**/*.js')
       .pipe(concat('bundle.js'))
